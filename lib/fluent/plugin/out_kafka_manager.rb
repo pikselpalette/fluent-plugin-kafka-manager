@@ -32,4 +32,8 @@ DESC
     enumerate_brokers
     log.info "brokers have been discovered: #{@brokers}"
   end
+
+  def emit(tag, es, chain)
+    super(tag, es, chain)
+  end
 end
